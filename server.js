@@ -3,6 +3,7 @@ const server = express();
 
 const apiRouter = require('./api/apiRouter');
 
+server.use(express.json());
 server.use('/api', apiRouter);
 
 const PORT = 4000;
